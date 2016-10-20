@@ -4,6 +4,11 @@ const {app} = electron;
 // 创建原生浏览器窗口的模块。
 const {BrowserWindow} = electron;
 
+//app.commandLine.appendSwitch('--enable-npapi');
+//app.commandLine.appendSwitch('ppapi-flash-path', path.join(__dirname, "tools", "pepflashplayer64_22_0_0_209.dll"));
+//app.commandLine.appendSwitch('ppapi-flash-version', '22.0.0.209');
+
+
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
 let mainWindow;
